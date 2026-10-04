@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shahdol - संस्कृति का शहर</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7f6;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #00695c, #00a896);
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background: #003d36;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffd166;
+    }
+
+    .hero {
+      min-height: 420px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+
+      background:
+        linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee")
+        center/cover;
+    }
+
+    .hero-content {
+      color: white;
+      max-width: 700px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 50px 8%;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .title h2 {
+      color: #00695c;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .about {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,.12);
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      color: #00695c;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      line-height: 1.6;
+    }
+
+    .info {
+      background: #e0f2f1;
+    }
+
+    .info-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .stat {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0,0,0,.1);
+    }
+
+    .stat h3 {
+      color: #00695c;
+      font-size: 28px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact button {
+      margin-top: 20px;
+      padding: 13px 25px;
+      border: none;
+      border-radius: 25px;
+      background: #00695c;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background: #004d40;
+    }
+
+    footer {
+      background: #003d36;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media(max-width:600px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      .hero h2 {
+        font-size: 30px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🌿 शाहडोल</h1>
+    <p>संस्कृति और प्राकृतिक सुंदरता का शहर</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#tourism">Tourism</a>
+    <a href="#info">जानकारी</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Welcome to Shahdol</h2>
+      <p>
+        मध्य प्रदेश के खूबसूरत शाहडोल जिले की संस्कृति,
+        इतिहास और पर्यटन स्थलों को जानें।
+      </p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="title">
+      <h2>शाहडोल के बारे में</h2>
+    </div>
+
+    <div class="about">
+      <p>
+        शाहडोल मध्य प्रदेश के उत्तर-पूर्वी भाग
